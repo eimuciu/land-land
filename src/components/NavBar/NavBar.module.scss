@@ -1,0 +1,57 @@
+@import '../../../styles/common' .main {
+  border: 1px solid black;
+  transition: height 0.3s;
+}
+
+.container {
+  width: 50%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 75px;
+}
+
+.navLinks a {
+  padding-left: 20px;
+}
+
+.hamburgerContainer {
+  width: 50px;
+  height: 100%;
+  display: none;
+  position: relative;
+}
+
+.hamburgerLinks {
+  display: none;
+  margin-top: 15px;
+  a {
+    padding: 15px 20px;
+    display: block;
+  }
+}
+
+.hamburgerMenu {
+  font-size: 25px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  i {
+    cursor: pointer;
+  }
+}
+
+@media (max-width: 1023px) {
+  .container {
+    width: $smallScreen;
+    height: 50px;
+  }
+  .navLinks {
+    display: none;
+  }
+  .hamburgerContainer {
+    display: block;
+  }
+}

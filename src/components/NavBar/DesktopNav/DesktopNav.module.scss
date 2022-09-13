@@ -1,0 +1,21 @@
+@import '../../../../styles/common';
+
+.main {
+  border: 1px solid black;
+}
+
+.container {
+  width: $largeScreen;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 75px;
+}
+
+.navLinks a {
+  padding-left: 20px;
+  &:hover {
+    color: #4eb3e3;
+  }
+}
